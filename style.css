@@ -1,0 +1,103 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#faf4ea;
+color:#333;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+background:linear-gradient(rgba(128,0,0,0.6),rgba(0,0,0,0.6)),
+url("images/background.jpg");
+background-size:cover;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:60px;
+letter-spacing:4px;
+color:#d4af37;
+}
+
+/* SECTION */
+.section{
+padding:120px 20px;
+text-align:center;
+}
+
+/* EVENTS */
+.event{
+padding:20px;
+margin:20px auto;
+max-width:400px;
+border-left:4px solid #d4af37;
+}
+
+/* GALLERY */
+.gallery img{
+width:300px;
+margin:15px;
+border-radius:10px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* 3D ENVELOPE */
+.envelope-container{
+position:fixed;
+width:100%;
+height:100%;
+background:#800000;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+.envelope{
+width:300px;
+height:200px;
+position:relative;
+transform-style:preserve-3d;
+cursor:pointer;
+}
+
+.front{
+position:absolute;
+width:100%;
+height:100%;
+background:white;
+border-radius:5px;
+}
+
+.flap{
+position:absolute;
+width:100%;
+height:100%;
+background:#d4af37;
+transform-origin:top;
+transition:1s;
+}
+
+.open .flap{
+transform:rotateX(-180deg);
+}
+
+.letter{
+position:absolute;
+top:70px;
+width:100%;
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:22px;
+}
